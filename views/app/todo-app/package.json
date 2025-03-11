@@ -1,0 +1,22 @@
+{
+  "name": "todo-app",
+  "version": "1.0.0",
+  "description": "A simple and intuitive todo app",
+  "main": "index.js",
+  "scripts": {
+    "tailwind-build": "npx tailwindcss -i ./src/output.css -o ./index.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabitodev/todo-app.git"
+  },
+  "author": "Gabriel Garcia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gabitodev/todo-app/issues"
+  },
+  "homepage": "https://github.com/gabitodev/todo-app#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.0.24"
+  }
+}

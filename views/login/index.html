@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Login</title>
+</head>
+<body class="bg-zinc-50">
+    <nav id="navbar" class="fixed top-0 right-0 left-0 bg-slate-900 h-16">
+    </nav>
+
+    <div class="pt-16 h-screen flex max-w-7xl mx-auto justify-center items-center px-4">
+        <div class="hidden lg:flex w-2/4 justify-center items-center">
+            <img class="w-3/4" src="/images/signup.svg" alt="Imagen para el registro">
+        </div>
+        <form id="form" class="flex flex-col gap-4 bg-slate-800 p-4 rounded-lg text-lg shadow-lg w-full md:w-9/12 lg:w2/4">
+            <div class="flex flex-col gap-2">
+                <label for="correo-input" class="font-bold">Correo <span class="text-red-500">*</span></label>
+                <input type="text" id="email-input" name="correo-input" autocomplete="off"  class="rounded-lg p-2 bg-zinc-100 focus:outline-none">
+            </div>
+            <div class="flex flex-col gap-2">
+                <label for="password-input" class="font-bold">Contraseña <span class="text-red-500">*</span></label>
+                <input type="password" id="password-input" name="password-input" autocomplete="off"  class="rounded-lg p-2 bg-zinc-100 focus:outline-none">
+                <p id="error-text" class="text-sm text-white">
+                    
+                </p>
+            </div>
+
+            <button 
+            id="form-btn"
+            class="bg-blue-800 py-2 px-4 rounded-lg font-bold text-white text-center hover:bg-blue-900 transition ease-in-out disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+            Iniciar sesion
+            </button>
+        </form>
+    </div>
+
+    <script src="../components/nav.js"></script>
+    <script src="index.js"></script> 
+</body>
+</html>

@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.h-webkit-fill {
+    height: -webkit-fill-available;
+}
+
+.inter-font {
+    font-family: 'Inter', sans-serif;
+}
+
+.audiowide-font {
+    font-family: 'Audiowide', cursive;
+}
+
+ul li:hover .delete-icon {
+    animation: scaleLeftToRight 0.3s forwards;
+}
+
+@keyframes scaleLeftToRight {
+    0% {
+        transform: scaleX(0);
+        width: 0;
+    }
+
+    100% {
+        transform: scaleX(1);
+    }
+}
